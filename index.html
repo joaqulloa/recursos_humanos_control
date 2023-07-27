@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>Sprint</title>
+</head>
+
+<body>
+    <div transition-style="in:circle:bottom-right">
+        <main>
+            <br>
+            <h1>RECURSOS HUMANOS</h1>
+            <br>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+    
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+    
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" required>
+    
+                <label for="activo">¿Trabajador activo?</label>
+                <input type="checkbox" id="trabajador-activo" required>
+    
+                <label for="fecha-ingreso">Fecha de ingreso:</label>
+                <input type="date" id="fecha-ingreso" required>
+    
+                <label for="sueldo-actual">Sueldo actual:</label>
+                <input type="number" id="sueldo-actual" required>
+    
+                <label for="sueldo-anterior">Sueldo semestre anterior:</label>
+                <input type="number" id="sueldo-anterior" required>
+    
+                <label for="cargas-familiares">¿Tiene cargas familiares?</label>
+                <input type="checkbox" id="cargas-familiares" required>
+    
+                <label for="cantidad-cargas">Cantidad de cargas familiares:</label>
+                <input type="number" id="cantidad-cargas" min="0" value="0">
+    
+                <button type="button" onclick="respuestas()">Enviar</button>
+            </form>
+            <br>
+            <h2>Información de permanencia</h2>
+            <div id="respuesta_b">
+
+            </div>
+            <br>
+            <h2>Información de beneficios</h2>
+            <div id="respuesta_c">  
+            </div>
+            <br>
+            <h2>Información de persona</h2>
+            <div id="respuesta_d">
+            </div>
+        </main>
+    <footer>
+        <img src="assets/img/logo.svg" alt="logo grupo" width="100">
+    </footer>
+    </div>
+    <script src="assets/js/funciones.js"></script>
+
+</body>
+
+
+</html>
